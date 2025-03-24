@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Border Login Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="box">
+  <div class="login">
+    <div class="loginBx">
+      <h2>
+        <i class="fa-solid fa-right-to-bracket"></i>
+        Login
+        <i class="fa-solid fa-heart"></i>
+      </h2>
+      <div class="instructions">
+        <div class="instruction-text">Use username: <span class="highlight">Lwh</span></div>
+        <div class="instruction-text">Use password: <span class="highlight">Lwh</span></div>
+      </div>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <input type="submit" value="Sign in" />
+      </form>
+      <div class="group">
+        <a href="#">Forgot Password</a>
+        <a href="#">Sign up</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    
+    if(username === 'Lwh' && password === 'Lwh') {
+      window.location.href = 'https://hsmodz.github.io/EID-MUBARAK/?name=Yourname';
+    }
+  });
+</script>
+</body>
+</html>
